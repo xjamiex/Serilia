@@ -36,6 +36,7 @@ public class SeriliaMain extends Mod{
         CaliBlocks.load();
         SeSystem.load();
         CaliterraTechTree.load();
+        AndBlocks.load();
 
         Events.on(EventType.ClientLoadEvent.class, (e) -> {
 
