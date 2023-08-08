@@ -6,7 +6,8 @@ import mindustry.world.Block;
 
 public class SeResources {
     public static Item
-            nickel, iridium, fragisteel, ferrite, vanadium, tarnide, galvanium, chirokyn, paragonite, graphene;
+            nickel, iridium, fragisteel, ferrite, vanadium, tarnide, galvanium, chirokyn, paragonite, graphene,
+            magnesium, iceChunk;
     public static Liquid
             methane, chlorine, steam, acid, acidicSolution;
     public static Block
@@ -81,6 +82,20 @@ public class SeResources {
         graphene = new Item("graphene", Color.valueOf("6e7080")){{
             hardness = 3;
             cost = 2f;
+
+            explosiveness = flammability = radioactivity = charge = 0f;
+        }};
+
+        magnesium = new Item("magnesium", Color.valueOf("514d8c")){{
+            hardness = 2;
+            cost = 1.1f;
+
+            explosiveness = flammability = radioactivity = charge = 0f;
+        }};
+
+        iceChunk = new Item("ice-chunk", Color.valueOf("c4e1ff")){{
+            hardness = 1;
+            cost = 1.0f;
 
             explosiveness = flammability = radioactivity = charge = 0f;
         }};
